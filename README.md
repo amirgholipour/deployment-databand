@@ -9,14 +9,23 @@ Note that there is a full documented set of instructions for [deploying databand
 
 ## Contents
 
+### Part 1: Deployment and Setup
+
+| Chapter   | Content                                                   |
+| :--------:|-----------------------------------------------------------|
+| 0         | [Prerequisites](./jupyter/0_prerequisites.ipynb)          |
+| 1         | [Hardware provisioning](./jupyter/1_provisioning.ipynb)   |
+| 2         | [Databand deployment](./jupyter/2_databand_deploy.ipynb)  |
+| 3         | [Airflow deployment](./jupyter/3_airflow_deploy.ipynb)    |
+| 4         | [Airflow integration](./jupyter/4_airflow_int.ipynb)      |  
+| 5         | [DataStage integration](./jupyter/5_datastage_int.ipynb)  |
+| 6         | [Postgres deployment](./jupyter/6_postgres_deploy.ipynb)  |
+
+### Part 2: Development and Observability
+
 | Chapter   | Content                                                 |
 | :--------:|---------------------------------------------------------|
-| 0         | [Prerequisites](./jupyter/0_prerequisites.ipynb)        |
-| 1         | [Hardware provisioning](./jupyter/1_provisioning.ipynb) |
-| 2         | [Databand deployment](./jupyter/2_databand.ipynb)       |
-| 3         | [Airflow deployment](./jupyter/3_airflow_deploy.ipynb)  |
-| 4         | [Airflow integration](./jupyter/4_airflow_int.ipynb)     |  
-| 5         | [DataStage integration](./jupyter/5_datastage_int.ipynb) |
+| 7         | [DAGs development](./jupyter/7_dags_dev.ipynb)          |
 
 ### How and why was this workshop developed?
 
