@@ -31,8 +31,6 @@ I recorded a quick guide of each chapter in this [YouTube playlist](https://yout
 | :--------:|---------------------------------------------------------|---------------------------------------------|
 | 7         | [DAGs development](./jupyter/7_dags_dev.ipynb)          |[in Kürze verfügbar]()  |
 
-
-
 ### How and why was this workshop developed?
 
 All contents were developed and tested on a MacBook using Microsoft Visual Studio Code with popular extensions for Markdown, Jupyter, Python and bash. Future enhancements will include Windows and Linux to adapt the commands when necessary.
@@ -48,3 +46,13 @@ The contents of this workshop have been fully tested and verified but the normal
 ### Acknowledgements
 
 Thanks to Matt Koscak, Adrian Houselander and Elena Lowery for having written the documentation I adapted and used as the starting point to compile this workshop.
+
+### Repository mirrors
+
+If you notice formatting failures while displaying the webpages, it may be caused by the differences in the rendering engines hosting the git repositories. Just clone the repository on your local machine and display it with Jupyter. Alternatively, you may try one of these mirrors:
+
+- GitLab: https://gitlab.com/angel-ibm/deployment-databand
+- GitHub: https://github.com/angel-ibm/deployment-databand
+- Enterprise github (IBM internal): https://github.ibm.com/angelito/databand-workshop
+
+
