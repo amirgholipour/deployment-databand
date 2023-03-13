@@ -4,8 +4,11 @@ import pandas as pd
 import psycopg2
 from sqlalchemy import create_engine
 from dbnd import dbnd_tracking, task, dataset_op_logger
+from airflow import DAG
+from datetime import datetime,timedelta
+from airflow.operators.python import PythonOperator
 
-motogp_file = 'sql/motogp.csv'
+motogp_file = '/opt/airflow/dags/sql/motogp.csv'
 
 @task
 def read_all_championships():
@@ -87,10 +90,22 @@ def motogp_pipeline ():
         result = write_to_postgres(one_year)
         print('Written: ' + str(result) + ' records')
 
-motogp_pipeline()
+def full_dag():
+    motogp_pipeline()
 
+with DAG(
+    dag_id="motogp_dag_python_airflow",
+    start_date=datetime(2023, 1, 1),
+    schedule_interval=timedelta(minutes=3),
+    catchup=False,
+) as dag:
+    motogp_dag_python_airflow = PythonOperator (
+        task_id="motogp_dag_python_airflow",
+        python_callable=full_dag
+        
+    )
 
-
+motogp_dag_python_airflow
 
 
     
