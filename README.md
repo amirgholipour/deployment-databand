@@ -54,5 +54,3 @@ If you notice formatting failures while displaying the webpages, it may be cause
 - GitLab: https://gitlab.com/angel-ibm/deployment-databand
 - GitHub: https://github.com/angel-ibm/deployment-databand
 - Enterprise github (IBM internal): https://github.ibm.com/angelito/databand-workshop
-
-
