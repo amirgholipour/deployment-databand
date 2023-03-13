@@ -3,7 +3,7 @@
 
 # IBM Databand hands-on Workshop
 
-Welcome to our hands-on workshop where you will learn to deploy [databand](https://databand.ai/) on an [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) cluster. Additionally, we will explore the integration capabilities with [Apache Airflow](https://airflow.apache.org/) and [IBM Datastage](https://www.ibm.com/products/datastage).
+Welcome to our hands-on workshop where you will learn to deploy [databand](https://databand.ai/) on an [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) cluster. Additionally, we will explore the integration capabilities with [Apache Airflow](https://airflow.apache.org/), [PostgreSQL](https://www.postgresql.org/), [python](https://www.python.org/) and [IBM Datastage](https://www.ibm.com/products/datastage).
 
 Note that there is a full documented set of instructions for [deploying databand](https://docs.databand.ai/docs/installing-databand-in-kubernetes-cluster) on a Kubernetes / OpenShift production environment. For educational purposes, some shortcuts have been made during this workshop.
 
