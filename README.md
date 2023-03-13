@@ -19,7 +19,7 @@ I recorded a quick guide of each chapter in this [YouTube playlist](https://yout
 | :--------:|-----------------------------------------------------------|---------------------------------------------|
 | 0         | [Prerequisites](./jupyter/0_prerequisites.ipynb)          |[Abschnitt 0](https://youtu.be/qXYpGCiDJnQ)  |
 | 1         | [Hardware provisioning](./jupyter/1_provisioning.ipynb)   |[Abschnitt 1](https://youtu.be/pyn_ZG-_NW8)  |
-| 2         | [Databand deployment](./jupyter/2_databand_deploy.ipynb)  |[Abschnitt 2]()  |
+| 2         | [Databand deployment](./jupyter/2_databand_deploy.ipynb)  |[Abschnitt 2](https://youtu.be/I7wjO_Ucqx0)  |
 | 3         | [Airflow deployment](./jupyter/3_airflow_deploy.ipynb)    |[Abschnitt 3](https://youtu.be/4n49O8ZCrno)  |
 | 4         | [Airflow integration](./jupyter/4_airflow_int.ipynb)      |[Abschnitt 4](https://youtu.be/RSnTgBpFd24)  |
 | 5         | [DataStage integration](./jupyter/5_datastage_int.ipynb)  |[Abschnitt 5](https://youtu.be/8OZt0w2OGTY)  |
@@ -29,7 +29,7 @@ I recorded a quick guide of each chapter in this [YouTube playlist](https://yout
 
 | Chapter   | Content                                                 | Video (in German)                           |
 | :--------:|---------------------------------------------------------|---------------------------------------------|
-| 7         | [DAGs development](./jupyter/7_dags_dev.ipynb)          |[Abschnitt 7]()  |
+| 7         | [DAGs development](./jupyter/7_dags_dev.ipynb)          |[in Kürze verfügbar]()  |
 
 
 
