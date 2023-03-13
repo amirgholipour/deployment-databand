@@ -9,23 +9,29 @@ Note that there is a full documented set of instructions for [deploying databand
 
 ## Contents
 
+### Video Playlist (in German)
+
+I recorded a quick guide of each chapter in this [YouTube playlist](https://youtube.com/playlist?list=PLa8RtivAledWdZsEzl34UUY_Eephzj7pZ)
+
 ### Part 1: Deployment and Setup
 
-| Chapter   | Content                                                   |
-| :--------:|-----------------------------------------------------------|
-| 0         | [Prerequisites](./jupyter/0_prerequisites.ipynb)          |
-| 1         | [Hardware provisioning](./jupyter/1_provisioning.ipynb)   |
-| 2         | [Databand deployment](./jupyter/2_databand_deploy.ipynb)  |
-| 3         | [Airflow deployment](./jupyter/3_airflow_deploy.ipynb)    |
-| 4         | [Airflow integration](./jupyter/4_airflow_int.ipynb)      |  
-| 5         | [DataStage integration](./jupyter/5_datastage_int.ipynb)  |
-| 6         | [Postgres deployment](./jupyter/6_postgres_deploy.ipynb)  |
+| Chapter   | Content                                                   | Video (in German)                           |
+| :--------:|-----------------------------------------------------------|---------------------------------------------|
+| 0         | [Prerequisites](./jupyter/0_prerequisites.ipynb)          |[Abschnitt 0](https://youtu.be/qXYpGCiDJnQ)  |
+| 1         | [Hardware provisioning](./jupyter/1_provisioning.ipynb)   |[Abschnitt 1](https://youtu.be/pyn_ZG-_NW8)  |
+| 2         | [Databand deployment](./jupyter/2_databand_deploy.ipynb)  |[Abschnitt 2]()  |
+| 3         | [Airflow deployment](./jupyter/3_airflow_deploy.ipynb)    |[Abschnitt 3](https://youtu.be/4n49O8ZCrno)  |
+| 4         | [Airflow integration](./jupyter/4_airflow_int.ipynb)      |[Abschnitt 4]()  |
+| 5         | [DataStage integration](./jupyter/5_datastage_int.ipynb)  |[Abschnitt 5]()  |
+| 6         | [Postgres deployment](./jupyter/6_postgres_deploy.ipynb)  |[Abschnitt 6](https://youtu.be/4Ki8IQpGR8U)  |
 
 ### Part 2: Development and Observability
 
-| Chapter   | Content                                                 |
-| :--------:|---------------------------------------------------------|
-| 7         | [DAGs development](./jupyter/7_dags_dev.ipynb)          |
+| Chapter   | Content                                                 | Video (in German)                           |
+| :--------:|---------------------------------------------------------|---------------------------------------------|
+| 7         | [DAGs development](./jupyter/7_dags_dev.ipynb)          |[Abschnitt 7]()  |
+
+
 
 ### How and why was this workshop developed?
 
