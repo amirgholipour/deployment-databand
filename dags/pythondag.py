@@ -1,3 +1,5 @@
+# Python program monitored by databand
+
 import pandas as pd
 import psycopg2
 from sqlalchemy import create_engine
@@ -43,10 +45,9 @@ def write_to_postgres(oneyear):
     myuser = "postgres"
     mypassword = "postgres"
     myport = "30208"
-
     myconnstring = myconntype+'://'+myuser+':'+mypassword+'@'+myhost+':'+myport+'/'+mydatabase
-
     myengine = create_engine(myconnstring)
+
     with dataset_op_logger(motogp_file+'_postgres',
                             "write",
                             with_schema=True,
