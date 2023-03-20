@@ -10,7 +10,7 @@ motogp_file = 'sql/motogp.csv'
 @task
 def read_all_championships():
     
-    with dataset_op_logger(motogp_file+'_all',
+    with dataset_op_logger(motogp_file,
                             "read",
                             with_schema=True,
                             with_preview=True,
@@ -24,7 +24,7 @@ def read_all_championships():
 
 @task
 def select_one_year(alldata):
-    with dataset_op_logger(motogp_file+'_oneyear',
+    with dataset_op_logger(motogp_file,
                             "read",
                             with_schema=True,
                             with_preview=True,
@@ -48,7 +48,7 @@ def write_to_postgres(oneyear):
     myconnstring = myconntype+'://'+myuser+':'+mypassword+'@'+myhost+':'+myport+'/'+mydatabase
     myengine = create_engine(myconnstring)
 
-    with dataset_op_logger(motogp_file+'_postgres',
+    with dataset_op_logger(motogp_file,
                             "write",
                             with_schema=True,
                             with_preview=True,
@@ -75,12 +75,12 @@ def motogp_pipeline ():
             conf={
                 "core": {
                     "databand_url": "http://databand-web-databand.itzroks-1100005cc8-2lbzmg-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud",
-                    "databand_access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODQ2ODc2NCwianRpIjoiMjA0OTAyODAtNTk0YS00NmIzLTllYTQtMDMzYWQwMTc4NzNmIiwidHlwZSI6ImFjY2VzcyIsImlkZW50aXR5IjoiZGF0YWJhbmQiLCJuYmYiOjE2Nzg0Njg3NjQsImV4cCI6MTc0MTU0MDc2NCwidXNlcl9jbGFpbXMiOnsiZW52IjoiIn19.PvBKfoTARg7Dh4lysvzgPeRVHDeHckg9B0yn6U24LpU"
+                    "databand_access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3OTA3MDcxMSwianRpIjoiYzNiYTgxOGYtMzA0ZS00MGQzLTgwNTQtZmZlMGRlMmY4MDc0IiwidHlwZSI6ImFjY2VzcyIsImlkZW50aXR5IjoiZGF0YWJhbmQiLCJuYmYiOjE2NzkwNzA3MTEsImV4cCI6MTc0MjE0MjcxMSwidXNlcl9jbGFpbXMiOnsiZW52IjoiIn19.LuR2DrQH3ve1NrztTeW_1h1ZNWF-TAHpXy1lpSQw5h4"
                     }
                 },
-            job_name="insert champions", 
-            run_name="one year",
-            project_name="MotoGP Project"
+            job_name="Python_DAG", 
+            run_name="Python_DAG",
+            project_name="Python pipelines"
         ) : 
         all_data = read_all_championships()
         one_year = select_one_year(all_data)
@@ -88,24 +88,3 @@ def motogp_pipeline ():
         print('Written: ' + str(result) + ' records')
 
 motogp_pipeline()
-
-
-
-
-
-    
-
-    
-
-
-
-    
-
-    
-    
-
-
-                            
-
-
-
