@@ -27,9 +27,13 @@ I recorded a quick guide of each chapter in this [YouTube playlist](https://yout
 
 ### Part 2: Development and Observability
 
-| Chapter   | Content                                                 | Video (in German)                           |
-| :--------:|---------------------------------------------------------|---------------------------------------------|
-| 7         | [DAGs development](./jupyter/7_dags_dev.ipynb)          |[in Kürze verfügbar]()  |
+| Chapter   | Content                                                            | Video (in German)                   |
+| :--------:|--------------------------------------------------------------------|-------------------------------------|
+| 7         | [Preparation](./jupyter/7_dags_dev.ipynb)                          |[in Kürze verfügbar]()  |
+| 8         | [SQL Airflow pipelines](./jupyter/8_SQL_dag_dev.ipynb)             |[in Kürze verfügbar]()  |
+| 9         | [Python pipelines](./jupyter/9_python_dag_dev.ipynb)               |[in Kürze verfügbar]()  |
+| 10        | [Python on Airflow pipelines](./jupyter/10_py_air_dag_dev.ipynb)   |[in Kürze verfügbar]()  |
+| 11        | [DataStage pipelines ](./jupyter/11_py_air_dag_dev.ipynb)          |[in Kürze verfügbar]()  |
 
 ### How and why was this workshop developed?
 
