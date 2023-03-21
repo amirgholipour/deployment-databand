@@ -33,7 +33,7 @@ I recorded a quick guide of each chapter in this [YouTube playlist](https://yout
 | 8         | [SQL Airflow pipelines](./jupyter/8_SQL_dag_dev.ipynb)             |[in Kürze verfügbar]()  |
 | 9         | [Python pipelines](./jupyter/9_python_dag_dev.ipynb)               |[in Kürze verfügbar]()  |
 | 10        | [Python on Airflow pipelines](./jupyter/10_py_air_dag_dev.ipynb)   |[in Kürze verfügbar]()  |
-| 11        | [DataStage pipelines ](./jupyter/11_py_air_dag_dev.ipynb)          |[in Kürze verfügbar]()  |
+| 11        | [DataStage pipelines ](./jupyter/11_datastage_dev.ipynb)          |[in Kürze verfügbar]()  |
 
 ### How and why was this workshop developed?
 
