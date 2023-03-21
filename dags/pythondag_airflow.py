@@ -20,7 +20,9 @@ def read_all_championships():
                             with_stats=True,
                             with_histograms=True
                           ) as logger:
+        
         motogp_championships = pd.read_csv(motogp_file, sep=';')
+
         logger.set(data=motogp_championships)
 
     return(motogp_championships)
@@ -34,7 +36,9 @@ def select_one_year(alldata):
                             with_stats=True,
                             with_histograms=True
                           ) as logger:
+        
         oneyear = alldata[alldata.Season.eq(2021)]
+
         logger.set(data=oneyear)
 
     return(oneyear)
@@ -58,7 +62,9 @@ def write_to_postgres(oneyear):
                             with_stats=True,
                             with_histograms=True
                           ) as logger:
+        
         oneyear.to_sql('motogp', myengine, if_exists='replace', index=False)
+        
         logger.set(data=oneyear)
 
     conn = psycopg2.connect(database=mydatabase,
@@ -106,21 +112,3 @@ with DAG(
     )
 
 motogp_dag_python_airflow
-
-
-    
-
-    
-
-
-
-    
-
-    
-    
-
-
-                            
-
-
-
