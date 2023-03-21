@@ -1,13 +1,21 @@
-# Python program monitored by databand
+# File: pythondag_airflow.py
+# Simple DAG for the Databand hands-on workshop
+
+# This python file mirrors the previous pythondag.py but modifies
+# some blocks to enable it as an Airflow DAG. Only those changes are
+# commented. Refer to pythondag.py to follow the logic
 
 import pandas as pd
 import psycopg2
 from sqlalchemy import create_engine
 from dbnd import dbnd_tracking, task, dataset_op_logger
-from airflow import DAG
 from datetime import datetime,timedelta
+# These imports are required by Airflow
+from airflow import DAG
 from airflow.operators.python import PythonOperator
 
+# The name of the dataset must be change so that
+# Airflow can find it
 motogp_file = '/opt/airflow/dags/sql/motogp.csv'
 
 @task
@@ -19,10 +27,8 @@ def read_all_championships():
                             with_preview=True,
                             with_stats=True,
                             with_histograms=True
-                          ) as logger:
-        
+                          ) as logger:       
         motogp_championships = pd.read_csv(motogp_file, sep=';')
-
         logger.set(data=motogp_championships)
 
     return(motogp_championships)
@@ -36,9 +42,7 @@ def select_one_year(alldata):
                             with_stats=True,
                             with_histograms=True
                           ) as logger:
-        
         oneyear = alldata[alldata.Season.eq(2021)]
-
         logger.set(data=oneyear)
 
     return(oneyear)
@@ -61,10 +65,8 @@ def write_to_postgres(oneyear):
                             with_preview=True,
                             with_stats=True,
                             with_histograms=True
-                          ) as logger:
-        
+                          ) as logger:      
         oneyear.to_sql('motogp', myengine, if_exists='replace', index=False)
-        
         logger.set(data=oneyear)
 
     conn = psycopg2.connect(database=mydatabase,
@@ -96,6 +98,7 @@ def motogp_pipeline ():
         result = write_to_postgres(one_year)
         print('Written: ' + str(result) + ' records')
 
+# The header has been added to follow the Airflow format
 with DAG(
     dag_id="Python_Airflow_DAG",
     default_args = {'owner': 'Angel'},
@@ -106,6 +109,12 @@ with DAG(
         "project: Python with Airflow pipelines "
     ],
 ) as dag:
+    # From the Airflow perspective, we will have just one single task.
+    # Airflow does not recommend to pass a lot of data from one task
+    # to another and we have a pandas dataframe that passes among three
+    # functions. That is why Airflow will see just one Task_Group
+    # but Databand will see the three individual sub-tasks where we write the
+    # @task decorator
     motogp_dag_python_airflow = PythonOperator (
         task_id="Task_Group",
         python_callable=motogp_pipeline
