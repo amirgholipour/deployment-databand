@@ -35,7 +35,7 @@ I recorded a quick guide of each chapter in this [YouTube playlist](https://yout
 | 10        | [Python on Airflow pipelines](./jupyter/10_py_air_dag_dev.ipynb)   |[in Kürze verfügbar]()  |
 | 11        | [DataStage pipelines](./jupyter/11_datastage_dev.ipynb)            |[in Kürze verfügbar]()  |
 | 12        | [Alerts and exceptions](./jupyter/12_alerts_dev.ipynb)             |[in Kürze verfügbar]()  |
-| 13        | [Custom Metrics](./jupyter/13_alerts_dev.ipynb)                    |[in Kürze verfügbar]()  |
+| 13        | [Customized user metrics <br />(example: Quantum Computing)](./jupyter/13_quantum_dev.ipynb)                    |[in Kürze verfügbar]()  |
 
 ### How and why was this workshop developed?
 
