@@ -27,15 +27,19 @@ I recorded a quick guide of each chapter in this [YouTube playlist](https://yout
 
 ### Part 2: Development and Observability
 
-| Chapter   | Content                                                            | Video (in German)                   |
-| :--------:|--------------------------------------------------------------------|-------------------------------------|
-| 7         | [Preparation](./jupyter/7_dags_dev.ipynb)                          |[in Kürze verfügbar]()  |
-| 8         | [SQL Airflow pipelines](./jupyter/8_SQL_dag_dev.ipynb)             |[in Kürze verfügbar]()  |
-| 9         | [Python pipelines](./jupyter/9_python_dag_dev.ipynb)               |[in Kürze verfügbar]()  |
-| 10        | [Python on Airflow pipelines](./jupyter/10_py_air_dag_dev.ipynb)   |[in Kürze verfügbar]()  |
-| 11        | [DataStage pipelines](./jupyter/11_datastage_dev.ipynb)            |[in Kürze verfügbar]()  |
-| 12        | [Alerts and exceptions](./jupyter/12_alerts_dev.ipynb)             |[in Kürze verfügbar]()  |
-| 13        | [Customized user metrics](./jupyter/13_quantum_dev.ipynb) <br/> example: **Quantum Computing**               |[in Kürze verfügbar]()  |
+### Video Playlist (in German)
+
+I recorded a quick guide of each chapter in this [YouTube playlist](https://www.youtube.com/playlist?list=PLa8RtivAledVTxwkLOk_W2XTt0CDaQfrm)
+
+| Chapter   | Content                                                            | Video (in German)                            |
+| :--------:|--------------------------------------------------------------------|----------------------------------------------|
+| 7         | [Preparation](./jupyter/7_dags_dev.ipynb)                          |[Abschnitt 7](https://youtu.be/AGPCNkdLiys)   |
+| 8         | [SQL Airflow pipelines](./jupyter/8_SQL_dag_dev.ipynb)             |[Abschnitt 8](https://youtu.be/Y7EJnEo_v_A)   |
+| 9         | [Python pipelines](./jupyter/9_python_dag_dev.ipynb)               |[Abschnitt 9](https://youtu.be/TEOkEjKSOtU)   |
+| 10        | [Python on Airflow pipelines](./jupyter/10_py_air_dag_dev.ipynb)   |[Abschnitt 10](https://youtu.be/1XIoYTvCRPM)  |
+| 11        | [DataStage pipelines](./jupyter/11_datastage_dev.ipynb)            |[Abschnitt 11](https://youtu.be/zqsWfLfJ9xI)  |
+| 12        | [Alerts and exceptions](./jupyter/12_alerts_dev.ipynb)             |[Abschnitt 12](https://youtu.be/1zCYC_69qXs)  |
+| 13        | [Customized user metrics](./jupyter/13_quantum_dev.ipynb) <br/> example: **Quantum Computing**    |[Abschnitt 13](https://youtu.be/Lhq7VajnlRI)  |
 
 ### How and why was this workshop developed?
 
