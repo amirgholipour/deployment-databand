@@ -1,6 +1,9 @@
-language: python
-install:
- - docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) pandoc/latex README.md -o README.pdf
-
 script: 
-  - pwd
+  - docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) pandoc/latex README.md -o README.pdf
+
+deploy:
+  - provider: script
+    script: bash .travis/add_to_git.sh
+    skip_cleanup: true
+    on:
+      branch: main
