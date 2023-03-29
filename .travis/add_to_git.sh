@@ -5,7 +5,7 @@ then
   git config user.name "Travis CI"
   git config user.email "Travis CI"
   git checkout -q main
-  git add README.pdf
+  git add README.docx
   git commit --allow-empty -m "Update repo [skip ci]"
   git remote add authenticated https://$GITHUB_TOKEN@github.ibm.com/angelito/databand-workshop.git
   git push --quiet authenticated main &>/dev/null
