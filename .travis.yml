@@ -1,5 +1,5 @@
 script: 
-  - docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) pandoc/latex README.md -o README.docx
+  - bash .travis/gendocx.sh
 
 deploy:
   - provider: script
