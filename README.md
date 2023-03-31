@@ -64,3 +64,7 @@ If you notice formatting failures while displaying the webpages, it may be cause
 - GitLab: https://gitlab.com/angel-ibm/deployment-databand
 - GitHub: https://github.com/angel-ibm/deployment-databand
 - Enterprise github (IBM internal): https://github.ibm.com/angelito/databand-workshop
+
+If you need a written documentation, all the contents are also available in PDF and Word format:
+- [Documentation](https://gitlab.com/angel-ibm/deployment-databand/-/tree/main/docs) in gitlab
+- [Documentation](https://github.com/angel-ibm/deployment-databand/tree/main/docs) in github
