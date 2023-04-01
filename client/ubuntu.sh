@@ -17,9 +17,6 @@ python -m bash_kernel.install
 pip install markupsafe==2.0.1
 . ./.profile
 
-# Clone the workshop repository
-git clone https://github.com/angel-ibm/deployment-databand.git
-
 # Install snap
 sudo snap install yq
 
