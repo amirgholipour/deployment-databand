@@ -43,4 +43,4 @@ sudo usermod -aG docker $USER
 
 # Start Jupyter
 
-jupyter lab --ip 0.0.0.0 --port 8080 --notebook-dir ~/deployment-databand
+jupyter lab --ip 0.0.0.0 --port 8080 --notebook-dir ~/deployment-databand  --no-browser & disown
