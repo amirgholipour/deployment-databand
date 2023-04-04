@@ -2,8 +2,8 @@
 # create an alias for Python
 sudo apt update -y
 sudo apt upgrade -y
-echo "alias python=python3" >> .bash_aliases
-. ./.bash_aliases 
+echo "alias python=python3" >> $HOME/.bash_aliases 
+. $HOME/.bash_aliases 
 
 # Install pip
 sudo apt install python3-pip -y
@@ -13,9 +13,9 @@ sudo apt install jupyter -y
 pip install --upgrade jupyter_core
 pip install jupyterlab
 pip install bash_kernel
-python -m bash_kernel.install
-pip install markupsafe==2.0.1
-. ./.profile
+python3 -m bash_kernel.install
+
+. $HOME/.profile
 
 # Install snap
 sudo snap install yq
@@ -40,6 +40,14 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 sudo usermod -aG docker $USER
+
+# Install additional modules for python DAGs
+pip install psycopg2-binary
+pip install pandas
+pip install sqlalchemy
+pip install dbnd
+# only if you get errors during the execution of the python dags
+# pip install markupsafe==2.0.1
 
 # Start Jupyter
 
