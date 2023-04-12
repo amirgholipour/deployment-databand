@@ -24,7 +24,7 @@ sudo snap install yq
 sudo snap install helm --classic
 
 # Install oc 
-wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable-4.10/openshift-client-linux-4.10.54.tar.gz
+wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/4.10.54/openshift-client-linux-4.10.54.tar.gz
 tar -zxf openshift-client-linux-4.10.54.tar.gz
 sudo mv kubectl oc /usr/local/bin
 rm README.md openshift-client-linux-4.10.54.tar.gz
